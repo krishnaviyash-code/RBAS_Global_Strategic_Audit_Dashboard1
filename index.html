@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBAS Global - Strategic Digital Audit & Lead Generation Framework</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'corp-blue': '#1e40af',
+                        'corp-blue-light': '#3b82f6',
+                        'ind-orange': '#ea580c',
+                        'ind-orange-light': '#f97316'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+
+        .metric-card {
+            transition: all 0.3s ease;
+        }
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(30, 64, 175, 0.1), 0 10px 10px -5px rgba(30, 64, 175, 0.04);
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, #ea580c, #f97316);
+            border-radius: 2px;
+        }
+
+        .tab-button {
+            transition: all 0.3s ease;
+        }
+        .tab-button.active {
+            background: #1e40af;
+            color: white;
+        }
+
+        .progress-bar {
+            transition: width 1s ease-out;
+        }
+
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+        .collapsible-content.open {
+            max-height: 2000px;
+        }
+
+        body {
+            scroll-behavior: smooth;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #1e40af, #ea580c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-2xl font-bold text-corp-blue">RBAS GLOBAL TRADING</h1>
+                    <p class="text-sm text-gray-600">Strategic Digital Audit & Lead Generation Framework</p>
+                </div>
+                <div class="text-right text-sm">
+                    <p class="text-gray-700">Prepared by: <span class="font-semibold">Krishnaviyash KS</span></p>
+                    <p class="text-gray-700">For: <span class="font-semibold">CEO Aftab Alam</span></p>
+                    <p class="text-gray-500">January 3, 2026</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Key Metrics -->
+    <section class="bg-gradient-to-br from-corp-blue to-corp-blue-light text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 fade-in-up">
+                <h2 class="text-4xl font-bold mb-4">3-Month Performance Overview</h2>
+                <p class="text-xl opacity-90">October 4, 2025 - January 1, 2026</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 metric-card fade-in-up delay-100">
+                    <div class="text-ind-orange-light text-4xl font-bold mb-2">+699%</div>
+                    <div class="text-lg font-semibold mb-1">LinkedIn Impressions</div>
+                    <div class="text-sm opacity-80">1,207 total impressions</div>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 metric-card fade-in-up delay-200">
+                    <div class="text-ind-orange-light text-4xl font-bold mb-2">+1,100%</div>
+                    <div class="text-lg font-semibold mb-1">Facebook Engagement</div>
+                    <div class="text-sm opacity-80">60 total engagements</div>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 metric-card fade-in-up delay-300">
+                    <div class="text-ind-orange-light text-4xl font-bold mb-2">48</div>
+                    <div class="text-lg font-semibold mb-1">New Followers</div>
+                    <div class="text-sm opacity-80">100% organic growth</div>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 metric-card fade-in-up delay-400">
+                    <div class="text-ind-orange-light text-4xl font-bold mb-2">₹20K</div>
+                    <div class="text-lg font-semibold mb-1">Month 1 Budget</div>
+                    <div class="text-sm opacity-80">7,400% projected ROI</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Executive Summary -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 section-title gradient-text">Executive Summary</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 border border-green-200">
+                    <h3 class="text-xl font-bold text-green-800 mb-4 flex items-center">
+                        <span class="mr-3 text-3xl">✓</span> Platform Strengths
+                    </h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><span class="mr-2 text-green-600">•</span> <span><strong>699% impression growth</strong> - Organic momentum strong</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-green-600">•</span> <span><strong>Facebook engagement 6.67%</strong> - 5% above benchmark</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-green-600">•</span> <span><strong>48 organic followers</strong> - Cost-effective acquisition</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-green-600">•</span> <span><strong>45.5% share rate</strong> - Content resonates strongly</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-red-50 to-rose-50 rounded-xl p-8 border border-red-200">
+                    <h3 class="text-xl font-bold text-red-800 mb-4 flex items-center">
+                        <span class="mr-3 text-3xl">⚠</span> Critical Gaps
+                    </h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><span class="mr-2 text-red-600">•</span> <span><strong>0% LinkedIn comment rate</strong> - Algorithm killer</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-red-600">•</span> <span><strong>No lead capture</strong> - Missing conversion mechanism</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-red-600">•</span> <span><strong>Zero paid visibility</strong> - Competitors 50-100x spend</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-red-600">•</span> <span><strong>CEO inactive</strong> - Missing trust-building opportunity</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Immediate Actions -->
+            <div class="bg-gradient-to-br from-ind-orange/10 to-ind-orange-light/10 rounded-xl p-8 border-l-4 border-ind-orange">
+                <h3 class="text-2xl font-bold text-corp-blue mb-6">Immediate Action Items (Next 30 Days)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-lg p-5 shadow-sm">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-red-100 text-red-600 font-bold rounded-full w-10 h-10 flex items-center justify-center mr-3">1</div>
+                            <div class="text-sm font-semibold text-gray-600">Week 1 - CRITICAL</div>
+                        </div>
+                        <p class="text-gray-800"><strong>Enable LinkedIn comment strategy</strong> - Increase to 5-8% of impressions</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-5 shadow-sm">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-orange-100 text-orange-600 font-bold rounded-full w-10 h-10 flex items-center justify-center mr-3">2</div>
+                            <div class="text-sm font-semibold text-gray-600">Week 2 - HIGH</div>
+                        </div>
+                        <p class="text-gray-800"><strong>Launch ₹5K LinkedIn campaign</strong> - Oman targeting, 5-10 leads/month</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-5 shadow-sm">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-yellow-100 text-yellow-600 font-bold rounded-full w-10 h-10 flex items-center justify-center mr-3">3</div>
+                            <div class="text-sm font-semibold text-gray-600">Week 1 - HIGH</div>
+                        </div>
+                        <p class="text-gray-800"><strong>Create lead capture forms</strong> - Convert engaged users to pipeline</p>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-5 shadow-sm">
+                        <div class="flex items-center mb-3">
+                            <div class="bg-blue-100 text-blue-600 font-bold rounded-full w-10 h-10 flex items-center justify-center mr-3">4</div>
+                            <div class="text-sm font-semibold text-gray-600">Ongoing - MEDIUM</div>
+                        </div>
+                        <p class="text-gray-800"><strong>Post 2x per week with CTAs</strong> - Maintain momentum & nurture</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Performance Audit -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 section-title gradient-text">Platform Performance Audit</h2>
+
+            <!-- Tab Navigation -->
+            <div class="flex justify-center mb-8 space-x-4">
+                <button onclick="showTab('linkedin')" id="tab-linkedin" class="tab-button active px-6 py-3 rounded-lg font-semibold bg-corp-blue text-white">
+                    LinkedIn Analysis
+                </button>
+                <button onclick="showTab('facebook')" id="tab-facebook" class="tab-button px-6 py-3 rounded-lg font-semibold bg-gray-200 text-gray-700">
+                    Facebook Analysis
+                </button>
+            </div>
+
+            <!-- LinkedIn Tab Content -->
+            <div id="content-linkedin" class="tab-content">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-white rounded-xl p-6 shadow-md metric-card">
+                        <div class="text-sm text-gray-600 mb-2">Page Impressions</div>
+                        <div class="text-3xl font-bold text-corp-blue mb-1">1,207</div>
+                        <div class="text-green-600 font-semibold text-sm">+699.3% growth</div>
+                        <div class="text-xs text-gray-500 mt-2">Excellent from low base</div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-md metric-card">
+                        <div class="text-sm text-gray-600 mb-2">Reactions/Likes</div>
+                        <div class="text-3xl font-bold text-corp-blue mb-1">46</div>
+                        <div class="text-green-600 font-semibold text-sm">+411.1% growth</div>
+                        <div class="text-xs text-gray-500 mt-2">Good engagement</div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-md metric-card border-2 border-red-200">
+                        <div class="text-sm text-gray-600 mb-2">Comments</div>
+                        <div class="text-3xl font-bold text-red-600 mb-1">0</div>
+                        <div class="text-red-600 font-semibold text-sm">-100% (CRITICAL)</div>
+                        <div class="text-xs text-red-500 mt-2">Algorithm de-prioritizes</div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-md metric-card">
+                        <div class="text-sm text-gray-600 mb-2">Page Views</div>
+                        <div class="text-3xl font-bold text-corp-blue mb-1">184</div>
+                        <div class="text-green-600 font-semibold text-sm">+81.5% growth</div>
+                        <div class="text-xs text-gray-500 mt-2">Strong visitor growth</div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-md metric-card">
+                        <div class="text-sm text-gray-600 mb-2">Unique Visitors</div>
+                        <div class="text-3xl font-bold text-corp-blue mb-1">67</div>
+                        <div class="text-green-600 font-semibold text-sm">+42.6% growth</div>
+                        <div class="text-xs text-gray-500 mt-2">Moderate reach expansion</div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-md metric-card">
+                        <div class="text-sm text-gray-600 mb-2">Total Followers</div>
+                        <div class="text-3xl font-bold text-corp-blue mb-1">55</div>
+                        <div class="text-green-600 font-semibold text-sm">+700% (48 new)</div>
+                        <div class="text-xs text-gray-500 mt-2">Rapid organic acquisition</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-md">
+                    <h3 class="text-xl font-bold text-corp-blue mb-6">LinkedIn Content Gaps & Solutions</h3>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-red-500 pl-4 py-2">
+                            <div class="font-semibold text-gray-800">Zero comments on posts</div>
+                            <div class="text-sm text-gray-600">Root Cause: No discussion prompts, no CEO engagement</div>
+                            <div class="text-sm text-green-600 mt-1"><strong>Solution:</strong> Ask questions, tag audience, CEO replies within 24h</div>
+                        </div>
+
+                        <div class="border-l-4 border-orange-500 pl-4 py-2">
+                            <div class="font-semibold text-gray-800">High impressions but low comments</div>
+                            <div class="text-sm text-gray-600">Root Cause: Posts informational, not conversational</div>
+                            <div class="text-sm text-green-600 mt-1"><strong>Solution:</strong> Shift to thought leadership + open-ended questions</div>
+                        </div>
+
+                        <div class="border-l-4 border-yellow-500 pl-4 py-2">
+                            <div class="font-semibold text-gray-800">35 'Reports' (saves) - Good signal</div>
+                            <div class="text-sm text-gray-600">Root Cause: Interest but no immediate action</div>
+                            <div class="text-sm text-green-600 mt-1"><strong>Solution:</strong> Add CTA: "Share your biggest challenge in comments"</div>
+                        </div>
+
+                        <div class="border-l-4 border-red-500 pl-4 py-2">
+                            <div class="font-semibold text-gray-800">No lead form usage</div>
+                            <div class="text-sm text-gray-600">Root Cause: No lead capture mechanism visible</div>
+                            <div class="text-sm text-green-600 mt-1"><strong>Solution:</strong> Setup LinkedIn lead gen forms immediately</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Facebook Tab Content -->
+            <div id="content-facebook" class="tab-content hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-white rounded-xl p-6 shadow-md metric-card">
+                        <div class="text-sm text-gray-600 mb-2">Total Followers</div>
+                        <div class="text-3xl font-bold text-corp-blue mb-1">1,068</div>
+                        <div class="text-yellow-600 font-semibold text-sm">Flat (net 0)</div>
+                        <div class="text-xs text-gray-500 mt-2">Stagnant growth</div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-md metric-card">
+                        <div class="text-sm text-gray-600 mb-2">Total Engagement</div>
+                        <div class="text-3xl font-bold text-corp-blue mb-1">60</div>
+                        <div class="text-green-600 font-semibold text-sm">+1,100% growth</div>
+                        <div class="text-xs text-gray-500 mt-2">Excellent momentum</div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-md metric-card">
+                        <div class="text-sm text-gray-600 mb-2">Total Views</div>
+                        <div class="text-3xl font-bold text-corp-blue mb-1">900</div>
+                        <div class="text-green-600 font-semibold text-sm">+204% growth</div>
+                        <div class="text-xs text-gray-500 mt-2">Strong video performance</div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-md metric-card">
+                        <div class="text-sm text-gray-600 mb-2">Reactions</div>
+                        <div class="text-3xl font-bold text-corp-blue mb-1">21</div>
+                        <div class="text-gray-600 font-semibold text-sm">47.7% of engagement</div>
+                        <div class="text-xs text-gray-500 mt-2">Moderate response</div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-md metric-card">
+                        <div class="text-sm text-gray-600 mb-2">Shares</div>
+                        <div class="text-3xl font-bold text-corp-blue mb-1">20</div>
+                        <div class="text-green-600 font-semibold text-sm">45.5% of engagement</div>
+                        <div class="text-xs text-gray-500 mt-2">Strong organic reach</div>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 shadow-md metric-card border-2 border-yellow-200">
+                        <div class="text-sm text-gray-600 mb-2">Comments</div>
+                        <div class="text-3xl font-bold text-yellow-600 mb-1">3</div>
+                        <div class="text-yellow-600 font-semibold text-sm">6.8% of engagement</div>
+                        <div class="text-xs text-yellow-600 mt-2">Below 15-25% target</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-md">
+                    <h3 class="text-xl font-bold text-corp-blue mb-6">Facebook Weaknesses & Fixes</h3>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-red-500 pl-4 py-2">
+                            <div class="font-semibold text-gray-800">High shares but zero 1-minute watch time</div>
+                            <div class="text-sm text-gray-600">Root Cause: Videos not compelling, too short/boring</div>
+                            <div class="text-sm text-green-600 mt-1"><strong>Solution:</strong> Test 30-60 sec product demos + testimonials</div>
+                        </div>
+
+                        <div class="border-l-4 border-orange-500 pl-4 py-2">
+                            <div class="font-semibold text-gray-800">Low comment rate (6.8%)</div>
+                            <div class="text-sm text-gray-600">Root Cause: No engagement prompts, generic posts</div>
+                            <div class="text-sm text-green-600 mt-1"><strong>Solution:</strong> Post with questions, tag local Oman buyers</div>
+                        </div>
+
+                        <div class="border-l-4 border-yellow-500 pl-4 py-2">
+                            <div class="font-semibold text-gray-800">Flat follower growth</div>
+                            <div class="text-sm text-gray-600">Root Cause: No paid promotion, organic only</div>
+                            <div class="text-sm text-green-600 mt-1"><strong>Solution:</strong> Allocate ₹5K paid budget, retargeting campaign</div>
+                        </div>
+
+                        <div class="border-l-4 border-blue-500 pl-4 py-2">
+                            <div class="font-semibold text-gray-800">Oman audience unclear</div>
+                            <div class="text-sm text-gray-600">Root Cause: Analytics not region-filtered (Nigeria 36%, Botswana 14%)</div>
+                            <div class="text-sm text-green-600 mt-1"><strong>Solution:</strong> Enable geography filter, test Oman-specific targeting</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitor Benchmarking -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 section-title gradient-text">Competitive Benchmarking</h2>
+
+            <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 mb-8">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead>
+                            <tr class="border-b-2 border-corp-blue">
+                                <th class="text-left py-3 px-4 font-bold text-corp-blue">Competitor</th>
+                                <th class="text-left py-3 px-4 font-bold text-corp-blue">LinkedIn Strategy</th>
+                                <th class="text-left py-3 px-4 font-bold text-corp-blue">Engagement Rate</th>
+                                <th class="text-left py-3 px-4 font-bold text-corp-blue">Market Focus</th>
+                                <th class="text-left py-3 px-4 font-bold text-corp-blue">Paid Visibility</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700">
+                            <tr class="border-b hover:bg-white transition">
+                                <td class="py-3 px-4 font-semibold">Komatsu India</td>
+                                <td class="py-3 px-4">Heavy video, case studies, innovation</td>
+                                <td class="py-3 px-4 text-green-600 font-bold">4-5%</td>
+                                <td class="py-3 px-4">Global, India-centric</td>
+                                <td class="py-3 px-4">Yes, Heavy</td>
+                            </tr>
+                            <tr class="border-b hover:bg-white transition">
+                                <td class="py-3 px-4 font-semibold">Sany India</td>
+                                <td class="py-3 px-4">Product demos, sustainability</td>
+                                <td class="py-3 px-4 text-green-600 font-bold">3.5-4%</td>
+                                <td class="py-3 px-4">Road construction</td>
+                                <td class="py-3 px-4">Yes, Moderate</td>
+                            </tr>
+                            <tr class="border-b hover:bg-white transition">
+                                <td class="py-3 px-4 font-semibold">L&T Construction</td>
+                                <td class="py-3 px-4">Thought leadership, infrastructure</td>
+                                <td class="py-3 px-4 text-green-600 font-bold">4-5%</td>
+                                <td class="py-3 px-4">Infrastructure</td>
+                                <td class="py-3 px-4">Yes, Heavy</td>
+                            </tr>
+                            <tr class="border-b hover:bg-white transition">
+                                <td class="py-3 px-4 font-semibold">JCB India</td>
+                                <td class="py-3 px-4">YouTube-first, multi-platform</td>
+                                <td class="py-3 px-4 text-green-600 font-bold">3-4%</td>
+                                <td class="py-3 px-4">Diversified</td>
+                                <td class="py-3 px-4">Yes, High</td>
+                            </tr>
+                            <tr class="bg-ind-orange/10 border-2 border-ind-orange">
+                                <td class="py-3 px-4 font-bold text-ind-orange">RBAS Global</td>
+                                <td class="py-3 px-4 font-semibold">Minimal, organic only</td>
+                                <td class="py-3 px-4 text-yellow-600 font-bold">3.8%</td>
+                                <td class="py-3 px-4 font-semibold">Oman/Middle East</td>
+                                <td class="py-3 px-4 text-red-600 font-bold">None detected</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="bg-green-50 rounded-xl p-6 border border-green-200">
+                    <h3 class="text-lg font-bold text-green-800 mb-4">🎯 RBAS Competitive Advantages</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start"><span class="mr-2 text-green-600">✓</span> <span><strong>Hyper-niche focus:</strong> Own Oman market vs. broad global approach</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-green-600">✓</span> <span><strong>Startup agility:</strong> Fast response, personal touch vs. corporate</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-green-600">✓</span> <span><strong>Competitive pricing:</strong> SME cost advantage over L&T/Komatsu</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-green-600">✓</span> <span><strong>Relationship-driven:</strong> Partner approach, not transactional</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-red-50 rounded-xl p-6 border border-red-200">
+                    <h3 class="text-lg font-bold text-red-800 mb-4">⚔️ Competitive Threats</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start"><span class="mr-2 text-red-600">×</span> <span><strong>Budget gap:</strong> Competitors spend 50-100x more on ads</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-red-600">×</span> <span><strong>Oman market:</strong> Dominated by FAMCO, Globtech distributors</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-red-600">×</span> <span><strong>Brand recognition:</strong> Low vs. established JCB/Komatsu</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-red-600">×</span> <span><strong>Algorithm challenge:</strong> Low engagement = deprioritization</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SWOT Analysis -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 section-title gradient-text">SWOT Analysis</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Strengths -->
+                <div class="bg-green-50 rounded-xl p-8 border-l-4 border-green-500 hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold text-green-800 mb-4">💪 Strengths</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><span class="mr-2 text-green-600 font-bold">•</span> <span>Strong visual content (heavy equipment photos perform well)</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-green-600 font-bold">•</span> <span>LinkedIn impression growth +699% in 3 months</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-green-600 font-bold">•</span> <span>48 organic followers (no paid acquisition)</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-green-600 font-bold">•</span> <span>High Facebook share rate (45.5% organic distribution)</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-green-600 font-bold">•</span> <span>Niche B2B focus = high-quality audience</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-green-600 font-bold">•</span> <span>LinkedIn as primary platform (correct for B2B)</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-green-600 font-bold">•</span> <span>CEO Aftab Alam brand recognition potential</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-green-600 font-bold">•</span> <span>Bangalore = India's export hub advantage</span></li>
+                    </ul>
+                </div>
+
+                <!-- Weaknesses -->
+                <div class="bg-red-50 rounded-xl p-8 border-l-4 border-red-500 hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold text-red-800 mb-4">⚠️ Weaknesses</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><span class="mr-2 text-red-600 font-bold">•</span> <span><strong>CRITICAL:</strong> Zero LinkedIn comments (algorithm killer)</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-red-600 font-bold">•</span> <span>Low absolute follower count (55 LinkedIn)</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-red-600 font-bold">•</span> <span>No paid advertising active (competitors all spending)</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-red-600 font-bold">•</span> <span>Low Facebook comment rate (6.8% vs. 15-25% target)</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-red-600 font-bold">•</span> <span>No lead generation mechanism in place</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-red-600 font-bold">•</span> <span>Minimal video content strategy</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-red-600 font-bold">•</span> <span>CEO personal profile not active</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-red-600 font-bold">•</span> <span>No employee advocacy program</span></li>
+                    </ul>
+                </div>
+
+                <!-- Opportunities -->
+                <div class="bg-blue-50 rounded-xl p-8 border-l-4 border-blue-500 hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-4">🚀 Opportunities</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><span class="mr-2 text-blue-600 font-bold">•</span> <span>Oman infrastructure growth (GatiShakti Plan)</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-blue-600 font-bold">•</span> <span>Low-cost LinkedIn targeting (₹5K = 200-300 impressions)</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-blue-600 font-bold">•</span> <span>Case study marketing differentiation</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-blue-600 font-bold">•</span> <span>Employee advocacy = 5-8x engagement multiplier</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-blue-600 font-bold">•</span> <span>WhatsApp Business integration (Oman professionals prefer)</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-blue-600 font-bold">•</span> <span>Niche hashtag strategy (#IndianEquipmentExport)</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-blue-600 font-bold">•</span> <span>India-Oman trade authority content</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-blue-600 font-bold">•</span> <span>Partnership with local distributors</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-blue-600 font-bold">•</span> <span>Video testimonial content from satisfied customers</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-blue-600 font-bold">•</span> <span>LinkedIn groups for Oman construction/mining buyers</span></li>
+                    </ul>
+                </div>
+
+                <!-- Threats -->
+                <div class="bg-orange-50 rounded-xl p-8 border-l-4 border-orange-500 hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold text-orange-800 mb-4">⚔️ Threats</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><span class="mr-2 text-orange-600 font-bold">•</span> <span>Intense competitor spending (L&T, JCB 50-100x more)</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-orange-600 font-bold">•</span> <span>Oman market dominated by FAMCO, Heavy Equipment LLC</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-orange-600 font-bold">•</span> <span>Algorithm prioritization changes (low engagement = deprioritization)</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-orange-600 font-bold">•</span> <span>High customer acquisition cost (B2B niche, long sales cycle)</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-orange-600 font-bold">•</span> <span>Economic sensitivity (heavy equipment spending volatile)</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-orange-600 font-bold">•</span> <span>Local competition in export (multiple Indian exporters)</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-orange-600 font-bold">•</span> <span>Low engagement hurts credibility with potential buyers</span></li>
+                        <li class="flex items-start"><span class="mr-2 text-orange-600 font-bold">•</span> <span>Limited budget vs. enterprise competitors</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Strategic Recommendations -->
+            <div class="mt-8 bg-gradient-to-r from-corp-blue to-ind-orange text-white rounded-xl p-8">
+                <h3 class="text-2xl font-bold mb-6">🎯 Strategic Recommendations from SWOT</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-bold mb-3 text-lg">Defensive Strategies</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li>• Fix zero-comment issue in Week 1 (CEO engagement protocol)</li>
+                            <li>• Launch paid ads before Q2 (organic reach plateaus)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-3 text-lg">Offensive Strategies</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li>• Own the Oman niche aggressively (competitors not focused)</li>
+                            <li>• Activate CEO personal brand (high trust factor, 5x engagement)</li>
+                            <li>• Create case study content (social proof differentiator)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Budget & ROI Projections -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 section-title gradient-text">Budget & ROI Projections</h2>
+
+            <!-- Month 1 Budget Breakdown -->
+            <div class="bg-gradient-to-br from-ind-orange/10 to-ind-orange-light/10 rounded-xl p-8 mb-8">
+                <h3 class="text-2xl font-bold text-corp-blue mb-6">Month 1 Budget Breakdown (January 2026)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-white rounded-lg p-6 shadow-md">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="font-semibold text-gray-700">LinkedIn Ads (Oman targeting)</span>
+                            <span class="text-2xl font-bold text-corp-blue">₹5,000</span>
+                        </div>
+                        <div class="text-sm text-gray-600 mb-3">CPM model: 5-10 per 1000 impressions</div>
+                        <div class="bg-gray-200 rounded-full h-2 overflow-hidden">
+                            <div class="bg-corp-blue h-full progress-bar" style="width: 25%"></div>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-2">25% of total budget</div>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-6 shadow-md">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="font-semibold text-gray-700">Facebook Ads (Oman + GCC)</span>
+                            <span class="text-2xl font-bold text-corp-blue">₹5,000</span>
+                        </div>
+                        <div class="text-sm text-gray-600 mb-3">CPM model: 3-5 per 1000 impressions</div>
+                        <div class="bg-gray-200 rounded-full h-2 overflow-hidden">
+                            <div class="bg-corp-blue h-full progress-bar" style="width: 25%"></div>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-2">25% of total budget</div>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-6 shadow-md">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="font-semibold text-gray-700">Content Creation (videos, images)</span>
+                            <span class="text-2xl font-bold text-corp-blue">₹5,000</span>
+                        </div>
+                        <div class="text-sm text-gray-600 mb-3">Freelance creator: ₹5,000 per project</div>
+                        <div class="bg-gray-200 rounded-full h-2 overflow-hidden">
+                            <div class="bg-ind-orange h-full progress-bar" style="width: 25%"></div>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-2">25% of total budget</div>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-6 shadow-md">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="font-semibold text-gray-700">Case Study Production</span>
+                            <span class="text-2xl font-bold text-corp-blue">₹3,000</span>
+                        </div>
+                        <div class="text-sm text-gray-600 mb-3">Interview + editing per case study</div>
+                        <div class="bg-gray-200 rounded-full h-2 overflow-hidden">
+                            <div class="bg-ind-orange h-full progress-bar" style="width: 15%"></div>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-2">15% of total budget</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-white rounded-lg p-4">
+                        <div class="text-sm text-gray-600 mb-1">Tools & Technology</div>
+                        <div class="text-xl font-bold text-corp-blue">₹1,600</div>
+                        <div class="text-xs text-gray-500">CRM, WhatsApp, Email tools</div>
+                    </div>
+                    <div class="bg-white rounded-lg p-4">
+                        <div class="text-sm text-gray-600 mb-1">Contingency Buffer</div>
+                        <div class="text-xl font-bold text-corp-blue">₹1,000</div>
+                        <div class="text-xs text-gray-500">Testing & optimization</div>
+                    </div>
+                    <div class="bg-gradient-to-br from-corp-blue to-corp-blue-light text-white rounded-lg p-4">
+                        <div class="text-sm mb-1">TOTAL MONTH 1</div>
+                        <div class="text-3xl font-bold">₹20,000</div>
+                        <div class="text-xs">Rounded total</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROI Projections -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+                <div class="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl p-6 border-2 border-yellow-300">
+                    <h4 class="text-lg font-bold text-orange-800 mb-4">Conservative Case</h4>
+                    <div class="space-y-3">
+                        <div><span class="text-sm text-gray-600">Total Leads:</span> <span class="font-bold text-2xl text-orange-600">45</span></div>
+                        <div><span class="text-sm text-gray-600">Meetings Scheduled:</span> <span class="font-bold">5 (10%)</span></div>
+                        <div><span class="text-sm text-gray-600">Deals Closed:</span> <span class="font-bold">1 (20%)</span></div>
+                        <div class="border-t-2 border-orange-200 pt-3">
+                            <div class="text-sm text-gray-600">Month 1 Revenue</div>
+                            <div class="text-3xl font-bold text-orange-600">₹5,00,000</div>
+                            <div class="text-sm text-green-600 font-semibold mt-1">ROI: 2,400%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 border-4 border-green-400">
+                    <div class="text-xs bg-green-500 text-white px-2 py-1 rounded-full inline-block mb-2">EXPECTED</div>
+                    <h4 class="text-lg font-bold text-green-800 mb-4">Expected Case</h4>
+                    <div class="space-y-3">
+                        <div><span class="text-sm text-gray-600">Total Leads:</span> <span class="font-bold text-2xl text-green-600">65</span></div>
+                        <div><span class="text-sm text-gray-600">Meetings Scheduled:</span> <span class="font-bold">13 (20%)</span></div>
+                        <div><span class="text-sm text-gray-600">Deals Closed:</span> <span class="font-bold">3 (23%)</span></div>
+                        <div class="border-t-2 border-green-200 pt-3">
+                            <div class="text-sm text-gray-600">Month 1 Revenue</div>
+                            <div class="text-3xl font-bold text-green-600">₹15,00,000</div>
+                            <div class="text-sm text-green-600 font-semibold mt-1">ROI: 7,400%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border-2 border-blue-300">
+                    <h4 class="text-lg font-bold text-blue-800 mb-4">Optimistic Case</h4>
+                    <div class="space-y-3">
+                        <div><span class="text-sm text-gray-600">Total Leads:</span> <span class="font-bold text-2xl text-blue-600">90</span></div>
+                        <div><span class="text-sm text-gray-600">Meetings Scheduled:</span> <span class="font-bold">23 (25%)</span></div>
+                        <div><span class="text-sm text-gray-600">Deals Closed:</span> <span class="font-bold">5 (22%)</span></div>
+                        <div class="border-t-2 border-blue-200 pt-3">
+                            <div class="text-sm text-gray-600">Month 1 Revenue</div>
+                            <div class="text-3xl font-bold text-blue-600">₹25,00,000</div>
+                            <div class="text-sm text-green-600 font-semibold mt-1">ROI: 12,400%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6-Month Scaling -->
+            <div class="bg-white rounded-xl p-8 shadow-lg">
+                <h3 class="text-2xl font-bold text-corp-blue mb-6">6-Month Budget Scaling Plan</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead class="bg-corp-blue text-white">
+                            <tr>
+                                <th class="py-3 px-4 text-left">Month</th>
+                                <th class="py-3 px-4 text-right">Total Budget</th>
+                                <th class="py-3 px-4 text-right">Paid Ads</th>
+                                <th class="py-3 px-4 text-right">Content</th>
+                                <th class="py-3 px-4 text-right">Expected Leads</th>
+                                <th class="py-3 px-4 text-right">Expected Revenue</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-semibold">Month 1 (Jan)</td>
+                                <td class="py-3 px-4 text-right">₹20,000</td>
+                                <td class="py-3 px-4 text-right">₹10,000</td>
+                                <td class="py-3 px-4 text-right">₹10,000</td>
+                                <td class="py-3 px-4 text-right font-bold text-corp-blue">45-90</td>
+                                <td class="py-3 px-4 text-right font-bold text-green-600">₹5L-25L</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-semibold">Month 2 (Feb)</td>
+                                <td class="py-3 px-4 text-right">₹25,000</td>
+                                <td class="py-3 px-4 text-right">₹15,000</td>
+                                <td class="py-3 px-4 text-right">₹10,000</td>
+                                <td class="py-3 px-4 text-right font-bold text-corp-blue">60-120</td>
+                                <td class="py-3 px-4 text-right font-bold text-green-600">₹10L-35L</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-semibold">Month 3 (Mar)</td>
+                                <td class="py-3 px-4 text-right">₹30,000</td>
+                                <td class="py-3 px-4 text-right">₹18,000</td>
+                                <td class="py-3 px-4 text-right">₹12,000</td>
+                                <td class="py-3 px-4 text-right font-bold text-corp-blue">75-150</td>
+                                <td class="py-3 px-4 text-right font-bold text-green-600">₹15L-50L</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-semibold">Month 4 (Apr)</td>
+                                <td class="py-3 px-4 text-right">₹35,000</td>
+                                <td class="py-3 px-4 text-right">₹20,000</td>
+                                <td class="py-3 px-4 text-right">₹15,000</td>
+                                <td class="py-3 px-4 text-right font-bold text-corp-blue">100-180</td>
+                                <td class="py-3 px-4 text-right font-bold text-green-600">₹25L-60L</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-semibold">Month 5 (May)</td>
+                                <td class="py-3 px-4 text-right">₹40,000</td>
+                                <td class="py-3 px-4 text-right">₹25,000</td>
+                                <td class="py-3 px-4 text-right">₹15,000</td>
+                                <td class="py-3 px-4 text-right font-bold text-corp-blue">125-200</td>
+                                <td class="py-3 px-4 text-right font-bold text-green-600">₹35L-75L</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-semibold">Month 6 (Jun)</td>
+                                <td class="py-3 px-4 text-right">₹45,000</td>
+                                <td class="py-3 px-4 text-right">₹28,000</td>
+                                <td class="py-3 px-4 text-right">₹17,000</td>
+                                <td class="py-3 px-4 text-right font-bold text-corp-blue">150-230</td>
+                                <td class="py-3 px-4 text-right font-bold text-green-600">₹50L-90L</td>
+                            </tr>
+                            <tr class="bg-gradient-to-r from-corp-blue to-ind-orange text-white font-bold">
+                                <td class="py-4 px-4">TOTAL 6 MONTHS</td>
+                                <td class="py-4 px-4 text-right">₹1,95,000</td>
+                                <td class="py-4 px-4 text-right">₹1,16,000</td>
+                                <td class="py-4 px-4 text-right">₹79,000</td>
+                                <td class="py-4 px-4 text-right text-xl">555-975</td>
+                                <td class="py-4 px-4 text-right text-xl">₹1.35Cr-3.3Cr</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 90-Day Execution Roadmap -->
+    <section class="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 section-title gradient-text">90-Day Execution Roadmap</h2>
+
+            <!-- Phase 1: Foundation (Weeks 1-4) -->
+            <div class="mb-12">
+                <div class="bg-gradient-to-r from-corp-blue to-corp-blue-light text-white rounded-t-xl p-6">
+                    <h3 class="text-2xl font-bold">Phase 1: Foundation (Weeks 1-4 | January 2026)</h3>
+                </div>
+                <div class="bg-white rounded-b-xl shadow-lg p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Week 1 -->
+                        <div class="border-l-4 border-red-500 pl-4">
+                            <div class="font-bold text-lg text-red-600 mb-3">Week 1</div>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li>✓ Setup LinkedIn lead gen forms</li>
+                                <li>✓ CEO + team comment on posts (within 24h)</li>
+                                <li>✓ Join 7 Oman/export LinkedIn groups</li>
+                                <li>✓ Setup WhatsApp Business + auto-responder</li>
+                            </ul>
+                            <div class="mt-3 text-xs text-gray-500">Success: Forms live + 5 comments</div>
+                        </div>
+
+                        <!-- Week 2 -->
+                        <div class="border-l-4 border-orange-500 pl-4">
+                            <div class="font-bold text-lg text-orange-600 mb-3">Week 2</div>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li>✓ Launch LinkedIn paid campaign (Oman)</li>
+                                <li>✓ CEO activation strategy (2 posts/week)</li>
+                                <li>✓ Design 5-email lead nurture sequence</li>
+                                <li>✓ Hire freelance content creator</li>
+                            </ul>
+                            <div class="mt-3 text-xs text-gray-500">Success: 200-300 impressions, CEO visible</div>
+                        </div>
+
+                        <!-- Week 3 -->
+                        <div class="border-l-4 border-yellow-500 pl-4">
+                            <div class="font-bold text-lg text-yellow-600 mb-3">Week 3</div>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li>✓ Launch Facebook paid campaign (Oman+GCC)</li>
+                                <li>✓ Post first employee advocacy content</li>
+                                <li>✓ Create 8-week content calendar</li>
+                            </ul>
+                            <div class="mt-3 text-xs text-gray-500">Success: 150-200 FB impressions, team posts</div>
+                        </div>
+
+                        <!-- Week 4 -->
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <div class="font-bold text-lg text-green-600 mb-3">Week 4</div>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li>✓ Launch first case study content</li>
+                                <li>✓ Review Week 1-4 metrics + optimize</li>
+                                <li>✓ Plan Month 2 budget increase</li>
+                            </ul>
+                            <div class="mt-3 text-xs text-gray-500">Success: 5%+ engagement, 3-5 comments/post</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Strategic Pillars (4-Quarter Plan) -->
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h3 class="text-2xl font-bold text-corp-blue mb-6">Strategic Pillars: 4-Quarter Targets</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead class="bg-gradient-to-r from-corp-blue to-ind-orange text-white">
+                            <tr>
+                                <th class="py-3 px-4 text-left">Pillar</th>
+                                <th class="py-3 px-4">Q1 2026 (Jan-Mar)</th>
+                                <th class="py-3 px-4">Q2 2026 (Apr-Jun)</th>
+                                <th class="py-3 px-4">Q3 2026 (Jul-Sep)</th>
+                                <th class="py-3 px-4">Q4 2026 (Oct-Dec)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-semibold">1. Build Audience</td>
+                                <td class="py-3 px-4">55→150 LI, 1068→1500 FB</td>
+                                <td class="py-3 px-4">150→300 LI, 1500→2500 FB</td>
+                                <td class="py-3 px-4">300→500+ LI, 2500→3500+ FB</td>
+                                <td class="py-3 px-4">500→1000+ LI, 3500→5000+ FB</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-semibold">2. Increase Engagement</td>
+                                <td class="py-3 px-4">0→5% comment rate</td>
+                                <td class="py-3 px-4">5→8% comment rate</td>
+                                <td class="py-3 px-4">8→10% comment rate</td>
+                                <td class="py-3 px-4">Sustain 10%+ engagement</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-semibold">3. Lead Generation</td>
+                                <td class="py-3 px-4 text-green-600 font-bold">5-10 leads/month</td>
+                                <td class="py-3 px-4 text-green-600 font-bold">15-20 leads/month</td>
+                                <td class="py-3 px-4 text-green-600 font-bold">25-30 leads/month</td>
+                                <td class="py-3 px-4 text-green-600 font-bold">Establish pipeline</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-semibold">4. Content Dominance</td>
+                                <td class="py-3 px-4">Establish calendar</td>
+                                <td class="py-3 px-4">Case studies + testimonials</td>
+                                <td class="py-3 px-4">Thought leadership authority</td>
+                                <td class="py-3 px-4">Market leadership position</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="py-3 px-4 font-semibold">5. Budget Efficiency</td>
+                                <td class="py-3 px-4">Experiment (12.5K/mo)</td>
+                                <td class="py-3 px-4">Optimize spend</td>
+                                <td class="py-3 px-4">Scale budget</td>
+                                <td class="py-3 px-4">Full funnel optimization</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paid Campaign Framework -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 section-title gradient-text">Paid Lead Generation Framework</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- LinkedIn Strategy -->
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-corp-blue text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl font-bold mr-4">LI</div>
+                        <h3 class="text-2xl font-bold text-corp-blue">LinkedIn Campaign</h3>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-lg p-4">
+                            <div class="font-semibold text-gray-700 mb-2">Budget Allocation</div>
+                            <div class="text-2xl font-bold text-corp-blue">₹5,000/month</div>
+                            <div class="text-sm text-gray-600">200-400 impressions expected</div>
+                        </div>
+
+                        <div class="bg-white rounded-lg p-4">
+                            <div class="font-semibold text-gray-700 mb-2">Campaign Type</div>
+                            <div class="text-gray-800">Sponsored Content (carousel/single image)</div>
+                            <div class="text-sm text-gray-600">High CTR, low CPM for B2B</div>
+                        </div>
+
+                        <div class="bg-white rounded-lg p-4">
+                            <div class="font-semibold text-gray-700 mb-2">Targeting</div>
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li>📍 <strong>Location:</strong> Oman, UAE, Saudi Arabia</li>
+                                <li>💼 <strong>Job Title:</strong> Project Manager, Procurement Head, Director</li>
+                                <li>🏭 <strong>Industry:</strong> Construction, Mining, Trading, Engineering</li>
+                                <li>🎯 <strong>Behavior:</strong> Engaged with equipment/construction content</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-lg p-4">
+                            <div class="font-semibold text-gray-700 mb-2">Ad Format & Copy</div>
+                            <div class="text-sm text-gray-700 mb-2"><strong>Format:</strong> Single image (equipment + CTA)</div>
+                            <div class="text-sm italic text-gray-600 bg-gray-50 p-3 rounded">"Import heavy equipment from India? 25+ years export experience to Oman. Free consultation. Click to learn."</div>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-corp-blue to-corp-blue-light text-white rounded-lg p-4">
+                            <div class="font-semibold mb-2">Expected Output</div>
+                            <div class="text-2xl font-bold">20-40 leads/month</div>
+                            <div class="text-sm">CPL: ₹125-250 | CTR: 2-4%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Facebook Strategy -->
+                <div class="bg-gradient-to-br from-orange-50 to-red-100 rounded-xl p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-ind-orange text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl font-bold mr-4">FB</div>
+                        <h3 class="text-2xl font-bold text-ind-orange">Facebook Campaign</h3>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-lg p-4">
+                            <div class="font-semibold text-gray-700 mb-2">Budget Allocation</div>
+                            <div class="text-2xl font-bold text-ind-orange">₹5,000/month</div>
+                            <div class="text-sm text-gray-600">300-600 impressions expected</div>
+                        </div>
+
+                        <div class="bg-white rounded-lg p-4">
+                            <div class="font-semibold text-gray-700 mb-2">Campaign Type</div>
+                            <div class="text-gray-800">Lead Generation Campaign (Facebook Lead Ads)</div>
+                            <div class="text-sm text-gray-600">Native lead form, no click-away friction</div>
+                        </div>
+
+                        <div class="bg-white rounded-lg p-4">
+                            <div class="font-semibold text-gray-700 mb-2">Targeting</div>
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li>📍 <strong>Location:</strong> Oman, UAE, Saudi Arabia, Kuwait</li>
+                                <li>👤 <strong>Age:</strong> 25-64 (professional buyers)</li>
+                                <li>🎯 <strong>Interests:</strong> Construction, Mining, Business Equipment, Trading</li>
+                                <li>🔄 <strong>Behaviors:</strong> Page engagement + website visitors (retargeting)</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-lg p-4">
+                            <div class="font-semibold text-gray-700 mb-2">Ad Format & Copy</div>
+                            <div class="text-sm text-gray-700 mb-2"><strong>Format:</strong> Carousel (3-5 equipment images) OR Single</div>
+                            <div class="text-sm italic text-gray-600 bg-gray-50 p-3 rounded">"Heavy Equipment from India: Excavators | Dumpers | Loaders. Direct exporter to Oman. Competitive pricing. Learn more."</div>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-ind-orange to-ind-orange-light text-white rounded-lg p-4">
+                            <div class="font-semibold mb-2">Expected Output</div>
+                            <div class="text-2xl font-bold">25-50 leads/month</div>
+                            <div class="text-sm">CPL: ₹100-200 | Lead Form Rate: 25-40%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lead Funnel -->
+            <div class="mt-12 bg-gradient-to-r from-corp-blue via-ind-orange to-corp-blue-light text-white rounded-xl p-8">
+                <h3 class="text-2xl font-bold mb-6 text-center">Lead Funnel: Ads → Leads → Sales</h3>
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                    <div class="bg-white/20 backdrop-blur-lg rounded-lg p-4 text-center">
+                        <div class="text-3xl mb-2">📢</div>
+                        <div class="font-bold mb-1">Awareness</div>
+                        <div class="text-sm">LinkedIn & Facebook Ads</div>
+                    </div>
+                    <div class="bg-white/20 backdrop-blur-lg rounded-lg p-4 text-center">
+                        <div class="text-3xl mb-2">📋</div>
+                        <div class="font-bold mb-1">Interest</div>
+                        <div class="text-sm">Lead Form Submit</div>
+                    </div>
+                    <div class="bg-white/20 backdrop-blur-lg rounded-lg p-4 text-center">
+                        <div class="text-3xl mb-2">💬</div>
+                        <div class="font-bold mb-1">Consideration</div>
+                        <div class="text-sm">WhatsApp 24h Response</div>
+                    </div>
+                    <div class="bg-white/20 backdrop-blur-lg rounded-lg p-4 text-center">
+                        <div class="text-3xl mb-2">📞</div>
+                        <div class="font-bold mb-1">Evaluation</div>
+                        <div class="text-sm">Sales Call + Quote</div>
+                    </div>
+                    <div class="bg-white/20 backdrop-blur-lg rounded-lg p-4 text-center">
+                        <div class="text-3xl mb-2">✅</div>
+                        <div class="font-bold mb-1">Conversion</div>
+                        <div class="text-sm">Order Placement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KPI Dashboard -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 section-title gradient-text">Success Metrics Dashboard</h2>
+
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h3 class="text-xl font-bold text-corp-blue mb-6">Monthly Tracking KPIs</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead class="bg-gradient-to-r from-corp-blue to-ind-orange text-white">
+                            <tr>
+                                <th class="py-3 px-4 text-left">Metric</th>
+                                <th class="py-3 px-4 text-right">Month 1 Target</th>
+                                <th class="py-3 px-4 text-right">Month 2 Target</th>
+                                <th class="py-3 px-4 text-right">Month 3 Target</th>
+                                <th class="py-3 px-4 text-right">Month 6 Target</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-semibold">LinkedIn Followers</td>
+                                <td class="py-3 px-4 text-right">80-100</td>
+                                <td class="py-3 px-4 text-right">120-150</td>
+                                <td class="py-3 px-4 text-right">150-200</td>
+                                <td class="py-3 px-4 text-right text-green-600 font-bold">250-300</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-semibold">LinkedIn Engagement Rate</td>
+                                <td class="py-3 px-4 text-right">5-6%</td>
+                                <td class="py-3 px-4 text-right">6-8%</td>
+                                <td class="py-3 px-4 text-right">8-10%</td>
+                                <td class="py-3 px-4 text-right text-green-600 font-bold">10-12%</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-semibold">LinkedIn Comments per Post</td>
+                                <td class="py-3 px-4 text-right">3-5</td>
+                                <td class="py-3 px-4 text-right">5-8</td>
+                                <td class="py-3 px-4 text-right">8-10</td>
+                                <td class="py-3 px-4 text-right text-green-600 font-bold">10-15</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-semibold">Facebook Followers</td>
+                                <td class="py-3 px-4 text-right">1100-1200</td>
+                                <td class="py-3 px-4 text-right">1300-1500</td>
+                                <td class="py-3 px-4 text-right">1500-2000</td>
+                                <td class="py-3 px-4 text-right text-green-600 font-bold">2500-3000</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-semibold">Facebook Engagement Rate</td>
+                                <td class="py-3 px-4 text-right">6-8%</td>
+                                <td class="py-3 px-4 text-right">8-10%</td>
+                                <td class="py-3 px-4 text-right">10-12%</td>
+                                <td class="py-3 px-4 text-right text-green-600 font-bold">12-15%</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50 bg-green-50">
+                                <td class="py-3 px-4 font-bold">Monthly Leads (Qualified)</td>
+                                <td class="py-3 px-4 text-right font-bold text-green-600">5-10</td>
+                                <td class="py-3 px-4 text-right font-bold text-green-600">15-20</td>
+                                <td class="py-3 px-4 text-right font-bold text-green-600">25-30</td>
+                                <td class="py-3 px-4 text-right font-bold text-green-600">40-50</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-semibold">Cost Per Lead (INR)</td>
+                                <td class="py-3 px-4 text-right">1000-1250</td>
+                                <td class="py-3 px-4 text-right">750-875</td>
+                                <td class="py-3 px-4 text-right">500-625</td>
+                                <td class="py-3 px-4 text-right text-green-600 font-bold">300-400</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-semibold">Email List Size</td>
+                                <td class="py-3 px-4 text-right">20-30</td>
+                                <td class="py-3 px-4 text-right">50-75</td>
+                                <td class="py-3 px-4 text-right">100-150</td>
+                                <td class="py-3 px-4 text-right text-green-600 font-bold">300-400</td>
+                            </tr>
+                            <tr class="border-b hover:bg-gray-50">
+                                <td class="py-3 px-4 font-semibold">Conversion Rate (Leads to Meetings)</td>
+                                <td class="py-3 px-4 text-right">10%</td>
+                                <td class="py-3 px-4 text-right">15%</td>
+                                <td class="py-3 px-4 text-right">20%</td>
+                                <td class="py-3 px-4 text-right text-green-600 font-bold">25%</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 bg-blue-50">
+                                <td class="py-3 px-4 font-bold">Paid Ad ROI</td>
+                                <td class="py-3 px-4 text-right font-bold text-blue-600">2-2.5x</td>
+                                <td class="py-3 px-4 text-right font-bold text-blue-600">2.5-3x</td>
+                                <td class="py-3 px-4 text-right font-bold text-blue-600">3-4x</td>
+                                <td class="py-3 px-4 text-right font-bold text-blue-600">4-5x</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gradient-to-br from-corp-blue via-indigo-600 to-ind-orange text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Execute?</h2>
+            <p class="text-xl mb-8 opacity-90">This strategy turns +699% social momentum into qualified Oman equipment orders</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="bg-white/20 backdrop-blur-lg rounded-xl p-6">
+                    <div class="text-5xl font-bold mb-2">1</div>
+                    <div class="font-bold mb-2">Approve ₹20K Budget</div>
+                    <div class="text-sm opacity-80">Start tomorrow</div>
+                </div>
+
+                <div class="bg-white/20 backdrop-blur-lg rounded-xl p-6">
+                    <div class="text-5xl font-bold mb-2">2</div>
+                    <div class="font-bold mb-2">CEO LinkedIn Access</div>
+                    <div class="text-sm opacity-80">3 posts/week activation</div>
+                </div>
+
+                <div class="bg-white/20 backdrop-blur-lg rounded-xl p-6">
+                    <div class="text-5xl font-bold mb-2">3</div>
+                    <div class="font-bold mb-2">First Video Shoot</div>
+                    <div class="text-sm opacity-80">Tuesday 11 AM (5 mins)</div>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <div class="text-2xl font-bold mb-2">Projected Month 1 Impact</div>
+                <div class="text-5xl font-bold mb-4">₹15,00,000 Revenue</div>
+                <div class="text-xl">7,400% ROI on ₹20,000 investment</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-4">
+                <h3 class="text-2xl font-bold text-ind-orange-light mb-2">RBAS GLOBAL TRADING</h3>
+                <p class="text-gray-400">Heavy Equipment Exporter | Bangalore, India</p>
+            </div>
+            <div class="text-sm text-gray-500">
+                <p>Strategic Digital Audit & Lead Generation Framework</p>
+                <p class="mt-2">Prepared by: Krishnaviyash KS | For: CEO Aftab Alam</p>
+                <p class="mt-2">January 3, 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tab switching functionality
+        function showTab(tabName) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.add('hidden');
+            });
+
+            // Remove active class from all buttons
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('active', 'bg-corp-blue', 'text-white');
+                button.classList.add('bg-gray-200', 'text-gray-700');
+            });
+
+            // Show selected tab content
+            document.getElementById('content-' + tabName).classList.remove('hidden');
+
+            // Add active class to clicked button
+            const activeButton = document.getElementById('tab-' + tabName);
+            activeButton.classList.add('active', 'bg-corp-blue', 'text-white');
+            activeButton.classList.remove('bg-gray-200', 'text-gray-700');
+        }
+
+        // Animate progress bars on load
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.progress-bar').forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 500);
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.metric-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
